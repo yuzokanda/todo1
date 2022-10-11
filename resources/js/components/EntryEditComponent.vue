@@ -94,7 +94,7 @@
                 return decodeURIComponent(results[2].replace(/\+/g, " "));
             },
            submit() {
-                console.log("わわわわわわ");
+                
                 console.log(this.entry_id);
                 const data = {
                     entry_name: this.entry_name,
