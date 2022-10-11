@@ -2,7 +2,7 @@
   <div class="container">
     <div>
         <td v-bind:to="{name: 'entry.list'}">
-        <button class="btn btn-success" @click="submit()">一覧</button>
+        <button class="btn btn-success" @click="onClickButton">一覧</button>
         </td>
         <br>
     </div>
@@ -68,7 +68,11 @@
                         //  console.log(this.entry);
                         location.href = "/entries" + this.entry
                     });
-            }
+            },
+            onClickButton() {
+                let url = '/entries';
+                location.href = url;                
+             }
         }
     }
 </script>
