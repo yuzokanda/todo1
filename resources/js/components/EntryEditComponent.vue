@@ -5,7 +5,7 @@
                 <table>
                 <tr>
                 <td v-bind:to="{name: 'entry.list'}">
-                      <button class="btn btn-success" @click="submit()">一覧</button>
+                      <button class="btn btn-success" @click="onClickButton">一覧</button>
                     </td>
                 </tr>
                 </table>
@@ -116,7 +116,11 @@
                       // always executed
                     });
                 
-            }
+            },
+            onClickButton() {
+                let url = '/entries';
+                location.href = url;                
+             }
         },
         mounted() {  
             // const entryId = document.getElementById('this.entry');  

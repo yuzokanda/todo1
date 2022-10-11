@@ -60,7 +60,7 @@
         },
         methods: {
             submit() {
-                console.log(this.entry);
+                // console.log(this.entry);
                 axios.post('/api/entries', this.entry)
                     .then((res) => {
                         this.entries.push(this.newEntry++)
