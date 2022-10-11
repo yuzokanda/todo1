@@ -63,7 +63,7 @@
                 axios.get('/api/entries/' + this.param_id)
 
                     .then((res) => {
-                        console.log('ききききき');
+                        // console.log('ききききき');
                         console.log(res.data.entry_name);
                         console.log(res);
                         console.log(res.data);
@@ -126,7 +126,7 @@
             // const entryId = document.getElementById('this.entry');  
             // console.log(entryId,this.entry);    
             // document.getElementById("this.entry")
-            console.log("ええええええええええ");
+            // console.log("ええええええええええ");
             // console.log(this.entryId);
             // console.log(this.id_entry);
             
