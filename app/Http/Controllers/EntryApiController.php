@@ -77,9 +77,7 @@ class EntryApiController extends Controller
 
     public function update(Request $request, Entry $entryId)   
     {
-        \Log::debug("いいいいいい");
-        \Log::debug($entryId->id);
-        \Log::debug($entryId);
+    
 
         
 
